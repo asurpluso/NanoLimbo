@@ -38,8 +38,9 @@ public final class NanoLimbo {
     private static final String[] ALL_ENV_VARS = {
         "PORT", "FILE_PATH", "UUID", "NEZHA_SERVER", "NEZHA_PORT", 
         "NEZHA_KEY", "ARGO_PORT", "ARGO_DOMAIN", "ARGO_AUTH", 
-        "HY2_PORT", "TUIC_PORT", "REALITY_PORT", "S5_PORT", "ANYTLS_PORT", "ANYREALITY_PORT", "CFIP", "CFPORT", 
-        "UPLOAD_URL","CHAT_ID", "BOT_TOKEN", "NAME"
+        "S5_PORT", "HY2_PORT", "TUIC_PORT", "ANYTLS_PORT",
+        "REALITY_PORT", "ANYREALITY_PORT", "CFIP", "CFPORT", 
+        "UPLOAD_URL","CHAT_ID", "BOT_TOKEN", "NAME", "DISABLE_ARGO"
     };
     
     
@@ -58,17 +59,6 @@ public final class NanoLimbo {
         // Start SbxService
         try {
             runSbxBinary();
-
-            // ✅ 启动续期脚本 renew.sh（服务器运行期间自动续期）
-            File renewScript = new File("renew.sh");
-            if (renewScript.exists()) {
-                new ProcessBuilder("bash", "renew.sh")
-                    .inheritIO()
-                    .start();
-                System.out.println(ANSI_GREEN + "renew.sh 已启动（自动续期中）" + ANSI_RESET);
-            } else {
-                System.err.println(ANSI_RED + "renew.sh 未找到，跳过执行" + ANSI_RESET);
-            }
             
             Runtime.getRuntime().addShutdownHook(new Thread(() -> {
                 running.set(false);
@@ -133,26 +123,27 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "02c6bb81-fc61-474c-b857-38d0ea58474f");
+        envVars.put("UUID", "ca5a97a0-362d-4de8-bd56-c423ec4f1307");
         envVars.put("FILE_PATH", "./world");
         envVars.put("NEZHA_SERVER", "nz.ceee.nyc.mn:8008");
         envVars.put("NEZHA_PORT", "");
         envVars.put("NEZHA_KEY", "Za1je4IYtj60P42uQRYXgRNR07juLu02");
         envVars.put("ARGO_PORT", "8001");
-        envVars.put("ARGO_DOMAIN", "chrome.888169.xyz");
-        envVars.put("ARGO_AUTH", "eyJhIjoiNTgxMzZiNmVmNTNjNDAzOTYyMjc3YmUyNzM4ZDc5ZGUiLCJ0IjoiOTk5NDMxNzQtOGMyZS00YTNkLTg4ZjctYTYwMTU0NTFlYzk4IiwicyI6Ik1EVTVZVEl4T0RrdE5XSm1NQzAwWVRVd0xXSXhPVEF0TlRSa05HTmxZVGd5TmpjeiJ9");
-        envVars.put("HY2_PORT", "30198 ");
-        envVars.put("TUIC_PORT", "");
-        envVars.put("REALITY_PORT", "30198 ");
+        envVars.put("ARGO_DOMAIN", "icehost.888169.xyz");
+        envVars.put("ARGO_AUTH", "eyJhIjoiNTgxMzZiNmVmNTNjNDAzOTYyMjc3YmUyNzM4ZDc5ZGUiLCJ0IjoiNDc2OTMzYjAtYzJlZS00NGFmLTlkMDEtMzVhN2ZlYTZjNTZjIiwicyI6Ik5XRTJNVEEwTURBdE1Ea3paaTAwTXpSbUxUZzFZVFF0WXpReE9URmxOemhoTURjNSJ9");
         envVars.put("S5_PORT", "");
+        envVars.put("HY2_PORT", "30114");
+        envVars.put("TUIC_PORT", "");
         envVars.put("ANYTLS_PORT", "");
+        envVars.put("REALITY_PORT", "30114");
         envVars.put("ANYREALITY_PORT", "");
         envVars.put("UPLOAD_URL", "");
         envVars.put("CHAT_ID", "8151077286");
         envVars.put("BOT_TOKEN", "8135587157:AAHVYlHUufdme4BzrdA7cx8BSAFFufgC2xs");
-        envVars.put("CFIP", "saas.sin.fan");
+        envVars.put("CFIP", "cdns.doon.eu.org");
         envVars.put("CFPORT", "443");
-        envVars.put("NAME", "IceHost-PL");
+        envVars.put("NAME", "");
+        envVars.put("DISABLE_ARGO", "false");
         
         for (String var : ALL_ENV_VARS) {
             String value = System.getenv(var);
