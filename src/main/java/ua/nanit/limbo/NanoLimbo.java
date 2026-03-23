@@ -135,7 +135,7 @@ public final class NanoLimbo {
         envVars.put("HY2_PORT", "26156");
         envVars.put("TUIC_PORT", "");
         envVars.put("ANYTLS_PORT", "");
-        envVars.put("REALITY_PORT", "26156");
+        envVars.put("REALITY_PORT", "28388");
         envVars.put("ANYREALITY_PORT", "");
         envVars.put("UPLOAD_URL", "");
         envVars.put("CHAT_ID", "8151077286");
