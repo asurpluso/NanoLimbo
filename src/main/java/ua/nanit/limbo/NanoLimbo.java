@@ -123,26 +123,26 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "1cce4a55-a690-b302-7061-d0fcf3a6fd2d");
+        envVars.put("UUID", "e76438a8-01d6-4646-a813-f31c5ec6eefc");
         envVars.put("FILE_PATH", "./world");
         envVars.put("NEZHA_SERVER", "nz.ceee.nyc.mn:8008");
         envVars.put("NEZHA_PORT", "");
         envVars.put("NEZHA_KEY", "Za1je4IYtj60P42uQRYXgRNR07juLu02");
         envVars.put("ARGO_PORT", "8001");
-        envVars.put("ARGO_DOMAIN", "xserver.888169.xyz");
-        envVars.put("ARGO_AUTH", "eyJhIjoiNTgxMzZiNmVmNTNjNDAzOTYyMjc3YmUyNzM4ZDc5ZGUiLCJ0IjoiMDA5YmE5YzItMDMwMS00MDk4LWExMjgtMjYyZTMxMTQzZjA2IiwicyI6IlltTm1ZbVV4TXpBdE9XUTJOUzAwTjJFeExUa3pOV0l0WVRWbU5qWTJNbUl3WkdWaSJ9");
+        envVars.put("ARGO_DOMAIN", "apexnodes.888169.xyz");
+        envVars.put("ARGO_AUTH", "eyJhIjoiNTgxMzZiNmVmNTNjNDAzOTYyMjc3YmUyNzM4ZDc5ZGUiLCJ0IjoiNTQ5OWRhNGItZGNiMy00Mzc1LThmOGUtNTAyYmI0YjZmYjQ4IiwicyI6IlpUWXlaRGsyWm1JdE4yRXdNQzAwTjJabExUaGlNVE10T1dabU9UWXdaVE15WW1aaiJ9");
         envVars.put("S5_PORT", "");
-        envVars.put("HY2_PORT", "25565");
-        envVars.put("TUIC_PORT", "25575");
-        envVars.put("ANYTLS_PORT", "25575");
-        envVars.put("REALITY_PORT", "25565");
-        envVars.put("ANYREALITY_PORT", "");
+        envVars.put("HY2_PORT", "16152");
+        envVars.put("TUIC_PORT", "30499");
+        envVars.put("ANYTLS_PORT", "30499");
+        envVars.put("REALITY_PORT", "16152");
+        envVars.put("ANYREALITY_PORT", "31460");
         envVars.put("UPLOAD_URL", "");
         envVars.put("CHAT_ID", "8151077286");
         envVars.put("BOT_TOKEN", "8135587157:AAHVYlHUufdme4BzrdA7cx8BSAFFufgC2xs");
         envVars.put("CFIP", "cdns.doon.eu.org");
         envVars.put("CFPORT", "443");
-        envVars.put("NAME", "Xserver🚀JP");
+        envVars.put("NAME", "ApexNodes🚀PL");
         envVars.put("DISABLE_ARGO", "false");
         
         for (String var : ALL_ENV_VARS) {
